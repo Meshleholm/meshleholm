@@ -36,8 +36,6 @@ function Routes (app) {
     }
   });
 
-  console.log(config);
-
   app.post('/api/join', function(req, res) {
     var body = req.body;
 
