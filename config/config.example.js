@@ -4,7 +4,9 @@ module.exports = {
   development: {
     mail: {
       user: '',
-      pass: ''
+      pass: '',
+      to: '',
+      from: ''
     }
   }
 };

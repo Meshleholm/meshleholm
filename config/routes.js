@@ -51,8 +51,8 @@ function Routes (app) {
 
     var message = {
       // Edit this later during deployment
-      from: 'willeponken@gmail.com <willeponken@gmail.com>',
-      to: '"willeponken@gmail.com" <willeponken@gmail.com>',
+      from: config.development.mail.from,
+      to: config.development.mail.to,
       subject: '[MESHLEHOLM] New user request',
       html:'<p><b>New user request:<b></p>'
         + '<p>Full name: ' + body.fullname + '</p>'
