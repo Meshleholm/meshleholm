@@ -1,0 +1,100 @@
+doctype html
+html(data-ng-app='meshleholm', data-ng-csp='', data-ng-cloak='', data-translate-cloak='')
+  head
+    title= title
+
+    meta(charset='UTF-8')
+
+    //- Bootstrap dependencies
+    link(rel='stylesheet', href='/dist/bootstrap/dist/css/bootstrap.min.css')
+
+    //- For AngularJS under CSP
+    link(rel='stylesheet', href='/dist/angular/angular-csp.css')
+
+    //- Proper rendering for mobile
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    //- Default stylesheet
+    link(rel='stylesheet', href='/stylesheets/default.css')
+
+    //- Font Awesome
+    link(rel='stylesheet', href='/dist/fontawesome/css/font-awesome.min.css')
+
+  body(data-ng-controller='MainCtrl')
+    div(class='navbar navbar-default navbar-fixed-top', role='navigation')
+      .container
+        .navbar-header
+          button(class='navbar-toggle btn-lg btn-mod', type='button', data-toggle='collapse', data-target='#user-collapse')
+            span(class='fa fa-align-justify fa-lg')
+
+          a(class='navbar-brand', href='/')
+            i(class='fa fa-users fa-lg')
+            |  Meshleholm
+          
+        div(class='collapse navbar-collapse', id='user-collapse')
+            ul(class='nav navbar-nav navbar-right')
+              li.dropdown.hidden-xs
+                a(class='dropdown-toggle', data-toggle='dropdown', href='#')
+                  span.hidden-xs
+                    span(class='fa fa-info fa-lg')
+
+                ul.dropdown-menu
+                  li
+                    a(href='/join') Join
+                  li
+                    a(href='/status') Status
+                  li
+                    a(href='/map') Map
+                  li.divider
+                  li
+                    a(href='/help') Help
+                  li
+                    a(href='/terms') Terms
+                  li
+                    a(href='/about') About
+
+              li.visible-xs
+                a(href='/join') Join
+              li.visible-xs
+                a(href='/status') Status
+              li.visible-xs
+                a(href='/map') Map
+              li.visible-xs
+                a(href='/help') Help
+              li.visible-xs
+                a(href='/terms') Terms
+              li.visible-xs
+                a(href='/about') About
+    
+    div(data-ng-view='')
+    
+    //- Bootstrap, jQuery & Leaflet
+    script(src='/dist/jquery/dist/jquery.min.js')
+    script(src='/dist/bootstrap/dist/js/bootstrap.min.js')
+
+    //if lt IE 9
+      script(src='/dist/html5shiv/dist/html5shiv.js')
+      script(src='/dist/respond/dest/respond.min.js')
+      
+    //- AngularJS
+    script(src='/dist/angular/angular.min.js')
+    //- Cookies
+    script(src='/dist/angular-cookies/angular-cookies.min.js')
+    //- Translate
+    script(src='/dist/angular-translate/angular-translate.min.js')
+    script(src='/dist/angular-translate-storage-local/angular-translate-storage-local.min.js')
+    script(src='/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js')
+    script(src='/dist/angular-translate-loader-url/angular-translate-loader-url.min.js')
+    script(src='/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js')
+    //- Route
+    script(src='/dist/angular-route/angular-route.min.js')
+    //- Services
+    script(src='/javascript/services.js')
+    //- Controllers
+    script(src='/javascript/controllers.js')
+    //- Configs
+    script(src='/javascript/config.js')
+    //- Directives
+    script(src='/javascript/directives.js')
+    //- Routes
+    script(src='/javascript/routes.js')

@@ -1,0 +1,34 @@
+{
+  "name": "meshleholm",
+  "version": "0.0.0",
+  "description": "Meshleholm",
+  "private": "true",
+  "scripts": {
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/willeponken/meshleholm.git"
+  },
+  "author": "willeponken",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/willeponken/meshleholm/issues"
+  },
+  "homepage": "meshleholm.htsit.se",
+  "dependencies": {
+    "bower": "^1.3.2",
+    "express": "^4.0.0",
+    "jade": "^1.3.1",
+    "static-favicon": "^1.0.2",
+    "grunt-nodemon": "^0.2.1",
+    "net-ping": "^1.1.10",
+    "body-parser": "^1.2.0",
+    "nodemailer": "^0.6.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}

@@ -1,0 +1,36 @@
+.content
+  .container
+    h1 Status
+
+    table.table.table-hover.table-responsive.node
+      tr
+        th 
+          a(href='' ng-click='predicate = "name"; reverse=!reverse') #
+        th
+          a(href='' ng-click='predicate = "status"; reverse=!reverse') Status
+        th
+          a(href='' ng-click='predicate = "delay"; reverse=!reverse') Delay
+        th
+          a(href='' ng-click='predicate = "maintainer"; reverse=!reverse') Maintainer
+        th
+          a(href='' ng-click='predicate = "location"; reverse=!reverse') Location
+        th
+          a(href='' ng-click='predicate = "contact"; reverse=!reverse') Contact
+        th
+          a(href='' ng-click='predicate = "comment"; reverse=!reverse') Comment
+      tr(data-ng-repeat='node in nodestatus.nodes | orderBy:predicate:reverse', data-ng-class='{success: node.alive, danger: !node.alive}')
+        td {{ node.name }}
+        td(data-ng-if='node.alive')
+          | Up
+        td(data-ng-if='!node.alive')
+          | Down
+        td {{ node.delay }} ms
+        td {{ node.maintainer }}
+        td {{ node.location }}
+        td {{ node.contact }}
+        td {{ node.comment }}
+    div(data-ng-show='!nodestatus')
+      p.middle
+        i(class='fa fa-refresh fa-spin fa-3x')
+
+  include ../layout/footer

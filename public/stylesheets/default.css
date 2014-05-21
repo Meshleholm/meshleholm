@@ -1,0 +1,31 @@
+.content {
+  margin-top: 50px;
+} @media (max-width: 768px) {
+  .content {
+    margin-top: 60px;
+  }
+}
+
+#fullscreen {
+  position: absolute;
+} @media (max-width: 768px) {
+  #fullscreen {
+  }
+}
+
+.middle {
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #888;
+}
+
+#footer a {
+  color: #888;
+}

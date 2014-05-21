@@ -1,0 +1,35 @@
+.content
+  .container
+    h1 Join
+    hr
+    .col-md-4
+    div(class='col-md-4', data-ng-show='!success && !error')
+      form(role='form', data-name='formData', data-ng-submit=('joinUs()'))
+        .form-group
+          label(for='inputFullName') Full name
+          input(type='text', data-ng-minlength='3', data-ng-maxlength='100', class='form-control', id='inputFullName', data-ng-model='formData.fullname', placeholder='Enter full name', required)
+        .form-group
+          label(for='inputEmail') Email address
+          input(type='email', class='form-control', id='inputEmail', data-ng-model='formData.email', placeholder='Enter email', required)
+        .form-group
+          label(for='inputMacAddress') MAC address
+          |  
+          a(href='/help#macaddress') (?)
+          input(type='text', class='form-control', id='inputMacAddress', data-ng-model='formData.macaddress', placeholder='Enter MAC address', required)
+        .checkbox
+          label
+            input(type='checkbox', data-ng-model='termsCheckbox')
+            | I accept the 
+            a(href='/terms') Terms of Service
+        button(type='submit', class='btn btn-default pull-right', data-ng-disabled='formData.$invalid || !formData.$dirty || !termsCheckbox') Join
+    div(class='col-md-4', data-ng-show='success')
+      h2 Registered
+      p Thanks for registering, you'll get notified if your request is accepted.
+      a(class='btn btn-default pull-right', href='/') Okey
+    div(class='col-md-4', data-ng-show='error')
+      h2 Error
+      pre The server returned: {{ error }}
+      a(class='btn btn-default pull-right', href='/') Okey
+    .col-md-4
+
+include ../layout/footer
