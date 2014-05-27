@@ -10,4 +10,5 @@ Home page for the Meshleholm meshnet
 * npm install grunt -g (maybe grunt-cli, too)
 * npm install bower -g
 * npm install
+* bower install
 * grunt
