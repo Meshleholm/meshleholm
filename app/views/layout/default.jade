@@ -66,7 +66,7 @@ html(data-ng-app='meshleholm', data-ng-csp='', data-ng-cloak='', data-translate-
               li.visible-xs
                 a(href='/about') About
     
-    div(data-ng-view='')
+    div(data-ng-view='', class='view-animate')
     
     //- Bootstrap, jQuery & Leaflet
     script(src='/dist/jquery/dist/jquery.min.js')
@@ -86,6 +86,8 @@ html(data-ng-app='meshleholm', data-ng-csp='', data-ng-cloak='', data-translate-
     script(src='/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js')
     script(src='/dist/angular-translate-loader-url/angular-translate-loader-url.min.js')
     script(src='/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js')
+    //- Animate
+    script(src='/dist/angular-animate/angular-animate.min.js')
     //- Route
     script(src='/dist/angular-route/angular-route.min.js')
     //- Services

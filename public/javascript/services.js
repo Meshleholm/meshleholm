@@ -1,6 +1,6 @@
 /*jshint undef:false */
 
-var meshleholm = angular.module('meshleholm', ['ngRoute', 'ngCookies', 'pascalprecht.translate']);
+var meshleholm = angular.module('meshleholm', ['ngRoute', 'ngCookies', 'ngAnimate', 'pascalprecht.translate']);
 
 meshleholm.factory('MeshleholmService', function($http) {
 
