@@ -4,10 +4,10 @@
     hr
     h2(id='macaddress')  How do I get the MAC Address?
     h3 Windows
-    p In the CMD, write:
+    p In a command prompt (cmd):
     pre
       | ipconfig /all
-    p And copy the string after HWAddr that looks something like this (under wireless adapter):
+    p Copy the string after HWAddr that looks something like this (under wireless adapter):
     pre
       | AB-BC-CD-DE-EF-FG
     p After you've copied it, make sure to replace the lines (-) with colons (:), just to make it easier for us.
@@ -18,5 +18,9 @@
     p And copy the string after HWaddr that looks something like this:
     pre
       | ab:bc:cd:de:ef:fg
+    h3 Android
+    p In the Settings app, go to WiFi. Press the menu button, choose Advanced and copy the MAC-address
+    pre
+      | AB-BC-CD-DE-EF-FG
 
 include ../layout/footer
