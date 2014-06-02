@@ -1,2 +1,96 @@
 {
+  "layout": {
+    "default": {
+      "LI_JOIN": "Join",
+      "LI_STATUS": "Status",
+      "LI_MAP": "Map",
+      "LI_HELP": "Help",
+      "LI_TERMS": "Terms",
+      "LI_ABOUT": "About"
+    }
+  },
+  "partials": {
+    "about": {
+      "H1_ABOUT": "About",
+      "H2_WHATIS": "What is Meshleholm?",
+      "TEXT_WHATIS": "Well, it's a meshnet, or hopefully it will be someday. Currently Meshleholm will be a school network were you won't need CJDNS to connect, everything on the Internet will still be accessible, but in the future there is a chance that everything will run atop of CJDNS. As of now, all users need to send us their MAC addresses so we can put them in the whitelist, this is so we have more control over who connects and are also able to remove those who abuse it."
+    },
+    "join": {
+      "TEXT_FULLNAME": "Full name",
+      "PLACEHLDR_FULLNAME": "Enter full name",
+      "TEXT_EMAIL": "Email address",
+      "PLACEHLDR_EMAIL": "Enter email",
+      "TEXT_MAC": "MAC address",
+      "PLACEHLDR": "Enter MAC address",
+      "TEXT_ACCEPT": "I accept the",
+      "TEXT_TERMS": "Terms of Service",
+      "BTN_JOIN": "Join",
+      "H1_JOIN": "Join"
+    },
+    "status": {
+      "TEXT_UP": "Up",
+      "TEXT_DOWN": "Down",
+      "TEXT_DELAY": "Delay",
+      "TEXT_MAINTAINER": "Maintainer",
+      "TEXT_LOCATION": "Location",
+      "TEXT_CONTANT": "Contact",
+      "TEXT_COMMENT": "Comment"
+    },
+    "map": {
+    },
+    "help": {
+      "H1_HELP": "Help",
+      "macaddress": {
+        "H2_MACADDRESS": "How do I get the MAC Address?",
+        "TEXT_WINDOWS": [
+          "In the CMD, write:",
+          "And copy the string after HWAddr that looks something like this (under wireless adapter",
+          "After you've copied it, make to replace the lines (-) with (:), just to make it easier for us."
+        ],
+        "TEXT_LINUX": [
+          "In shell, write:",
+          "And copy the string after HWaddr that looks something like this:"
+        ]
+    },
+    "terms": {
+      "H1_TERMS": "Terms of Service",
+      "NOTE": "Note! This is just at draft, but follow the sayings below.",
+      "H2_DONT": "Please, don't",
+      "TEXT_DONT": "Don't abuse this service in any kind of way, please don't be a leecher, help us out with this network and make it better than Unicom. Don't overload this service with your porn downloading/uploading etc. Don't browse illegal content, child pornography etc.",
+      "H2_DO": "Please, do",
+      "TEXT_DO": "Take care of this network, and if you're interested; you could hook up with us and help us extend / improve it.",
+      "H2_IF": "This happens if you",
+      "LI_IF": [{
+        "BOLD": "Overload the service with your shit",
+        "TEXT": "You'll get banned"
+      },
+      {
+        "BOLD": "Browse illegal content",
+        "TEXT": "You'll get banned"
+      },
+      {
+        "BOLD": "Abuse it in any other way",
+        "TEXT": "You guessed it, we'll ban you"
+      },
+      {
+        "BOLD": "Help us out",
+        "TEXT": "You'll get a kiss from Petrus"
+      }]
+    },
+    "home": {
+      "slide": [{
+        "HEAD": "Meshlocal in Hässleholm, Sweden",
+        "TEXT": "Meshleholm is a meshnet being built for Hässleholm's School of Technology (HTS)"
+      },
+      {
+        "HEAD": "Cjdns",
+        "TEXT": "Cjdns is being used as a network protocol"
+      }],
+      "BTN_SLIDE": "Join Us",
+      "H2_LEFT": "What is a Meshlocal?",
+      "TEXT_LEFT": "A Meshlocal is a local meshnet which runs CJDNS as its network protocol. The dream is to create a decentralized community based network, a meshnet, and replace the centralized Internet.",
+      "H2_RIGHT": "Cjdns?",
+      "TEXT_RIGHT": "From Wikipedia, \"Cjdns is a networking protocol, a system of digital rules for message exchange between computers. The philosophy behind cjdns is that networks should be easy to set up, protocols should scale up smoothly and security should be ubiquitous.\""
+    }
+  }
 }
