@@ -8,11 +8,6 @@ meshleholm.controller('HomeCtrl', function($scope) {
     image: '/images/hassleholmfront.jpg',
     header: 'Meshlocal in Hässleholm, Sweden',
     text: 'Meshleholm is a meshnet being built for Hässleholm\'s School of Technology (HTS)'
-  },
-  {
-    image: '/images/cjdnslogo.png',
-    header: 'Cjdns',
-    text: 'Cjdns is being used as a network protocol.'
   }];
 });
 

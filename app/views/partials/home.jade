@@ -1,6 +1,6 @@
 .content
   div(id='meshleholm-carousel', class='carousel slide', data-ride='carousel', meshleholm-carousel)
-    ol.carousel-indicators
+  //-  ol.carousel-indicators
       li(data-target='#meshleholm-carousel', data-slide-to='{{ $index }}', ng-class="{'active': $index == 0, '': $index != 0}", ng-repeat='banner in banners')
 
     .carousel-inner
@@ -11,7 +11,7 @@
           p.lead(style='text-shadow: 0px 2px 3px #000;') {{ banner.text }}
           p
             a(class='btn btn-lg btn-default', type='button', href='/join') Join Us
-
+  //-
     a(class='left carousel-control', href='', ng-click='carouselPrev()', data-slide='prev')
       span(class='glyphicon glyphicon-chevron-left')
     a(class='right carousel-control', href='', ng-click='carouselNext()', data-slide='next')

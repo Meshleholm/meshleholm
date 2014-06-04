@@ -81,10 +81,6 @@
       "slide": [{
         "HEAD": "Meshlocal in Hässleholm, Sweden",
         "TEXT": "Meshleholm is a meshnet being built for Hässleholm's School of Technology (HTS)"
-      },
-      {
-        "HEAD": "Cjdns",
-        "TEXT": "Cjdns is being used as a network protocol"
       }],
       "BTN_SLIDE": "Join Us",
       "H2_LEFT": "What is a Meshlocal?",
