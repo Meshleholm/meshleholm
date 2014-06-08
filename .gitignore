@@ -30,5 +30,6 @@ node_modules
 # Bower
 bower_components
 
-# Ignore config
+# Ignore config & registrations
 config/config.js
+data/reg.json

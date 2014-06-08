@@ -38,6 +38,36 @@ function Routes (app) {
 
   app.post('/api/join', function(req, res) {
     var body = req.body;
+    
+    function AddRegistration (users) {
+        try {
+          users = JSON.parse(users);
+        } catch (err) {
+          console.log(err);
+        }
+        users.users.push({
+          'user': body.fullname,
+          'email': body.email,
+          'macaddress': body.macaddress
+        });
+        fs.writeFile('./data/reg.json', JSON.stringify(users), function (err) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log('[REG] Successfully registered new user "' + body.fullname + '"');
+          }
+        });
+    };
+
+    fs.readFile('./data/reg.json', 'utf8', function (err, users) {
+      if (err && err.code === 'ENOENT') {
+        AddRegistration ( { "users": [] } );
+      } else if (err) {
+        console.log(err);
+      } else {
+        AddRegistration (users);
+      }
+    });
 
     var transport = nodemailer.createTransport("SMTP", {
       service: 'Gmail',
