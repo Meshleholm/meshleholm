@@ -48,7 +48,8 @@ function Routes (app) {
         users.users.push({
           'user': body.fullname,
           'email': body.email,
-          'macaddress': body.macaddress
+          'macaddress': body.macaddress,
+          'status': 'pending'
         });
         fs.writeFile('./data/reg.json', JSON.stringify(users), function (err) {
           if (err) {
